@@ -8,7 +8,10 @@ module Api
     private
 
     def booking_params
-      params.require(:book_parking_space).permit(:user_id, :parking_space_id, :date)
+      params
+        .require(:book_parking_space)
+        .permit(:parking_space_id, :date)
+        .merge(user_id: current_user.id)
     end
   end
 end
