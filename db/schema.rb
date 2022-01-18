@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_01_18_091703) do
+ActiveRecord::Schema.define(version: 2022_01_18_092752) do
 
   create_table "bookings", force: :cascade do |t|
     t.date "date", null: false
@@ -52,6 +52,7 @@ ActiveRecord::Schema.define(version: 2022_01_18_091703) do
     t.string "registration_number", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "is_admin", default: false, null: false
     t.index ["email"], name: "index_users_on_email"
   end
 
