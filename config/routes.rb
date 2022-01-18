@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  namespace :api do
+    resources :locations, only: [:create, :index] do
+      resources :parkings
+    end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+    resources :parking_spaces
+
+    resources :users, only: :index
+
+    resources :book_parking_space, only: :create
+  end
 end
