@@ -1,0 +1,8 @@
+development:
+  auth0_domain: http://dev-bjmp60ea.us.auth0.com/
+  auth0_client_id: SMQj6COaI46WMjCTde82eLzB0MAPnGCv
+  auth0_client_secret: iFR76vViHdYDI5gJz0YlQ5XiWkbke5-mkgFX8oHTnh--DvWyd3PR-N3y6uFK6fW6
+production:
+  auth0_domain: http://dev-bjmp60ea.us.auth0.com/
+  auth0_client_id: SMQj6COaI46WMjCTde82eLzB0MAPnGCv
+  auth0_client_secret: iFR76vViHdYDI5gJz0YlQ5XiWkbke5-mkgFX8oHTnh--DvWyd3PR-N3y6uFK6fW6
